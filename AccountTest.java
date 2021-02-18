@@ -8,22 +8,20 @@
 
  System.out.println("How much will you like to deposit?");
 
-  Scanner input = new Scanner(System.in);
+ Scanner input = new Scanner(System.in);
 
   double depositAmount = input.nextDouble();
+
+  System.out.println("How much will you like to withdraw?");
 
   double withdrawAmount = input.nextDouble();
 
   joyAccount.deposit(depositAmount);
+ 
+  joyAccount.withdrawal(withdrawAmount);
 
-  System.out.println("How much will you like to withdraw?");
-
-  joyAccount.withdrawal(withdrawAccount);
-
-  String nameOfAccount = joyAccount.getName();
-
-  System.out.printf("The account name is %s%n", nameOfAccount);
-	System.out.println("The account balance is " + joyAccount.getBalance());
+  System.out.printf("Hello, %s%n",joyAccount.getName());
+  System.out.println("Your account balance is " + joyAccount.getBalance());
 
 
 
